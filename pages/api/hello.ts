@@ -17,12 +17,12 @@ export default function handler(
   const { url, query, method, body } = req;
   console.log(`req: ${url} method: ${method} query:`, query);
   
-  if ( method === 'get') {
+  if ( method === 'GET') {
     res.status(200).json(items.findOne({name: 'mjolnir'}))
     return
   }
 
-  if (method === 'patch') {
+  if (method === 'PATCH') {
     console.log('patching', body);
     return
   }
