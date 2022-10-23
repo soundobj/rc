@@ -1,0 +1,50 @@
+@import '../../styles/main.module.scss';
+
+$discWidth: 57px;
+
+.albumCover {
+  border-radius: 15px;
+  max-width: $cardWidth;
+  padding: 20px;
+  background-color: $lightGrey;
+  margin: $margin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .albumName {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .circle {
+    background-color: $darkGrey;
+    border-radius: 50%;
+    width: $discWidth;
+    height: $discWidth;
+    margin-right: 15px;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+  }
+
+  .albumYear {
+    font-size: 12px;
+    font-weight: 200;
+    margin: 0;
+  }
+
+  .artistName {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+}

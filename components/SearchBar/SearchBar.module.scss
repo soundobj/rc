@@ -1,0 +1,23 @@
+@import '../../styles/main.module.scss';
+
+.searchBar {
+  max-width: $mainPageWidth;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+
+  .logo {
+    margin-left: $margin;
+  }
+
+  .input {
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: $lightGrey;
+    margin-right: $margin;
+    padding-left: $margin;
+  }
+}

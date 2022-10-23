@@ -23,7 +23,15 @@ export default function handler(
   }
 
   if (method === 'PATCH') {
-    console.log('patching', body);
+    const nextBody = JSON.parse(body);
+    const owner = nextBody.payload;
+    console.log('patching owner', owner);
+    const nextTest = items.findOne({ name: 'mjolnir'});
+    nextTest.owner = owner;
+    console.log('nextTest', nextTest);
+    
+    items.update(nextTest);
+    res.status(200).json(items.findOne({name: 'mjolnir'}));
     return
   }
 }

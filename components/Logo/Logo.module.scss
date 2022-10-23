@@ -1,0 +1,12 @@
+@import '../../styles/main.module.scss';
+
+.logo {
+  font-size: 35px;
+
+  .link {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: $blue
+  }
+}

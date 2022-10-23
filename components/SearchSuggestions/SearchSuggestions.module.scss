@@ -1,0 +1,10 @@
+@import '../../styles/main.module.scss';
+
+.searchSuggestions {
+  position: fixed;
+  @extend %centerAligned;
+ 
+  .suggestion {
+    margin-right: 4px;
+  }
+}

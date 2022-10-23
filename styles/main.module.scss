@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+$lightGrey: #EFF0F3;
+$darkGrey: #C0C0C0;
+$blue: #2D84E8;
+$margin: 8px;
+$cardWidth: 300px;
+
+.reset {
+  margin: -$margin;
+}
+
+$mainPageWidth: $cardWidth * 4;
+
+%centerAligned {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

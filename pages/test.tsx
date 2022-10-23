@@ -13,11 +13,12 @@ export async function getServerSideProps() {
 type Test = {
   data: {
     name: string
+    owner: string
   };
 };
 
 const Test: NextPage<Test> = (props: Test) => {
-  const { data: { name } } = props;
+  const { data: { owner } } = props;
 
   return (
     <div className={styles.container}>
@@ -27,7 +28,7 @@ const Test: NextPage<Test> = (props: Test) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Chat name={name} />
+        <Chat owner={owner} />
       </main>
     </div>
   )
